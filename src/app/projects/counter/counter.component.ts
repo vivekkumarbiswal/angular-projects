@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-counter',
@@ -14,5 +14,17 @@ export class CounterComponent {
 
   decrement(){
     this.counter--
+  }
+
+  getCounterStatus(){
+    if(this.counter === 0){
+      return 'neutral';
+    }
+    else if (this.counter > 0){
+      return 'positive';
+    }
+    else{
+      return 'negative';
+    }
   }
 }

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ViewChild } from '@angular/core';
+import { ChildComponent } from '../child/child.component';
 
 export interface User {
   name: string;

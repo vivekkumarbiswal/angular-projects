@@ -1,0 +1,4 @@
+<h3>Parent Component</h3>
+<app-child [user] = "userData" [userMessage] = "message" (sendMessage)="receivedData($event)"></app-child>
+
+<p><strong>Message received from child: </strong>{{msgReceived}}</p>

@@ -1,0 +1,51 @@
+<div>
+  <h1>{{interpolationTitle}}</h1>
+  <p>{{ user }}</p>
+</div>
+
+<div>
+  <h1>Propery Binding</h1>
+  <img [src]="image" alt="Angular Image">
+</div>
+
+<div>
+  <h1>Event Binding</h1>
+  <div>
+    <h3>Simple Event Binding</h3>
+    <button type="button" (click)="showMessage()">Show Message</button>
+    <p>{{showMsg}}</p>
+  </div>
+
+  <div>
+    <h3>Implementing Two-way binding using event binding</h3>
+    <input type="text" (input)="getInputText($event)">
+    <p>{{text}}</p>
+  </div>
+
+  <div>
+    <h3>Toggle button</h3>
+    <button type="button" (click)="toggleBtn()">Toggle</button>
+    <p *ngIf="show">Toggle show value is true now</p>
+  </div>
+
+  <div>
+    <h3>Counter</h3>
+    <button type="button" (click)="Counter()">Increase</button>
+    <!-- <p *ngIf="count > 0">{{count}}</p> -->
+    <p *ngIf="count !== 0">{{count}}</p>
+  </div>
+
+  <div>
+    <h3>Pass value in Event</h3>
+    <button type="button" (click)="valuePassed('Vivek')">Value Passed</button>
+    <p>{{name}}</p>
+  </div>
+</div>
+
+<div>
+  <h1>Two-way Data Binding</h1>
+  <div>
+    <input type="text" [(ngModel)] = "userName">
+    <p>{{userName}}</p>
+  </div>
+</div>

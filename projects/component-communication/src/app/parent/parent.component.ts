@@ -1,27 +1,27 @@
 import { Component } from '@angular/core';
 
-export interface User{
-  name:string;
-  age:number;
-  city:string;
+export interface User {
+  name: string;
+  age: number;
+  city: string;
 }
 
 @Component({
   selector: 'app-parent',
   templateUrl: './parent.component.html',
-  styleUrls: ['./parent.component.scss']
+  styleUrls: ['./parent.component.scss'],
 })
 export class ParentComponent {
-  message = "Data from Parent Component";
+  message = 'Data from Parent Component';
 
-  userData: User= {
-    name: "Vivek Kumar Biswal",
+  userData: User = {
+    name: 'Vivek Kumar Biswal',
     age: 29,
-    city: "Bangalore"
-  }
+    city: 'Bangalore',
+  };
 
   msgReceived = '';
-  receivedData(event:any){
-    this.msgReceived = event
+  receivedData(event: any) {
+    this.msgReceived = event;
   }
 }

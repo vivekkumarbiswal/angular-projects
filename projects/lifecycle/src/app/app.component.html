@@ -1,0 +1,10 @@
+<h1>Angular Lifecycle Demo</h1>
+
+<button (click)="changeMessage()">Change Input</button>
+
+<button (click)="toggleComponent()">Destroy / Create Component</button>
+
+<hr />
+
+<app-lifecycle-child *ngIf="showComponent" [message]="message">
+</app-lifecycle-child>

@@ -1,0 +1,18 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppComponent } from './app.component';
+import { LifecycleChildComponent } from './lifecycle-child/lifecycle-child.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    LifecycleChildComponent
+  ],
+  imports: [
+    BrowserModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
